@@ -1,5 +1,6 @@
-# For UniBorg
-# Syntax .type <text>
+#!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+# (c) Shrimadhav U K
 
 from telethon import events
 import asyncio
@@ -11,7 +12,7 @@ async def _(event):
         return
     # https://t.me/AnotherGroup/176551
     input_str = event.pattern_match.group(1)
-    typing_symbol = "░"
+    typing_symbol = "|"
     DELAY_BETWEEN_EDITS = 0.3
     previous_text = ""
     await event.edit(typing_symbol)

@@ -1,6 +1,3 @@
-# For UniBorg
-# Syntax .get (repo, heroku, packs)
-
 import asyncio
 import datetime
 from telethon import events

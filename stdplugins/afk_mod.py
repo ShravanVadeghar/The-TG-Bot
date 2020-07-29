@@ -1,5 +1,5 @@
-# For UniBorg
-# Syntax (.afk <optional reason>)"
+"""AFK Plugin for @UniBorg
+Syntax: .afk REASON"""
 import asyncio
 import datetime
 from telethon import events

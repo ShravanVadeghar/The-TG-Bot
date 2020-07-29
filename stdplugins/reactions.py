@@ -1,6 +1,5 @@
 # For UniBorg
 # By Priyam Kalra
-# Syntax .oof, .sed, .emoji
 from telethon import events
 from uniborg.util import admin_cmd
 import asyncio

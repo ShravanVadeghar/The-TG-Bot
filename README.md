@@ -1,8 +1,10 @@
-# The_TG_Bot
+# uniborg
 
-Customized #UniBorg based on telethon.
+Pluggable [``asyncio``](https://docs.python.org/3/library/asyncio.html)
+[Telegram](https://telegram.org) userbot based on
+[Telethon](https://github.com/LonamiWebs/Telethon).
 
-## Installing
+## installing
 
 #### The Easy Way
 
@@ -42,3 +44,9 @@ class Development(Config):
   LOAD = []
   NO_LOAD = []
 ```
+
+## internals
+
+The core features offered by the custom `TelegramClient` live under the
+[`uniborg/`](https://github.com/SpEcHiDe/uniborg/tree/master/uniborg)
+directory, with some utilities, enhancements, the `_core` plugin, and the `_inline_bot` plugin.

@@ -1,5 +1,3 @@
-# For UniBorg
-# Syntax .alive
 import sys
 from telethon import events, functions, __version__
 from uniborg.util import admin_cmd
@@ -37,3 +35,21 @@ async def _(event):
     else:
         await event.reply(help_string + "\n\n" + s_help_string)
         await event.delete()
+
+
+@borg.on(admin_cmd(pattern="dc"))  # pylint:disable=E0602
+async def _(event):
+    if event.fwd_from:
+        return
+    result = await borg(functions.help.GetNearestDcRequest())  # pylint:disable=E0602
+    await event.edit(result.stringify())
+
+
+@borg.on(admin_cmd(pattern="config"))  # pylint:disable=E0602
+async def _(event):
+    if event.fwd_from:
+        return
+    result = await borg(functions.help.GetConfigRequest())  # pylint:disable=E0602
+    result = result.stringify()
+    logger.info(result)  # pylint:disable=E0602
+    await event.edit("""Telethon UserBot powered by @UniBorg""")

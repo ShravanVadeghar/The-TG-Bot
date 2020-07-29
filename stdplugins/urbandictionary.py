@@ -1,19 +1,19 @@
 # This Source Code Form is subject to the terms of the Mozilla Public
 # License, v. 2.0. If a copy of the MPL was not distributed with this
 # file, You can obtain one at http://mozilla.org/MPL/2.0/.
-# For UniBorg
-# Syntax .search <text>
+"""Urban Dictionary
+Syntax: .ud Query"""
 from telethon import events
 import urbandict
 from uniborg.util import admin_cmd
 
 
-@borg.on(admin_cmd("search (.*)"))
+@borg.on(admin_cmd("desc (.*)"))
 async def _(event):
     if event.fwd_from:
         return
+    await event.edit("processing...")
     str = event.pattern_match.group(1)
-    await event.edit("Searching UrbanDictionary for {str}..")
     try:
         mean = urbandict.define(str)
         if len(mean) > 0:

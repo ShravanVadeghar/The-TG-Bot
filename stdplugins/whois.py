@@ -1,5 +1,5 @@
-# For UniBorg
-# Syntax .whois as a reply to a user
+"""Get Telegram Profile Picture and other information
+Syntax: .whois @username"""
 
 import html
 from telethon.tl.functions.photos import GetUserPhotosRequest

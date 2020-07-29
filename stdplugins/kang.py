@@ -1,7 +1,6 @@
 # For UniBorg
 # By Priyam Kalra
 # Syntax (.kang <pack_number>)
-
 from telethon import events
 from telethon.tl import functions, types
 from io import BytesIO

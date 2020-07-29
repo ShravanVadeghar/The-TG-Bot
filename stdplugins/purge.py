@@ -2,8 +2,8 @@
 from telethon import events
 import asyncio
 from uniborg.util import admin_cmd
-# For UniBorg
-# Syntax (.purge as a reply to a msg)
+
+
 @borg.on(admin_cmd("purge ?(.*)"))
 async def _(event):
     if event.fwd_from:

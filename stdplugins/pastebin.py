@@ -1,6 +1,5 @@
-# For UniBorg
-# Syntax .paste
-
+"""IX.IO pastebin like site
+Syntax: .paste"""
 from telethon import events
 import asyncio
 from datetime import datetime
@@ -50,6 +49,6 @@ async def _(event):
     ms = (end - start).seconds
     if r["isUrl"]:
         nurl = f"https://del.dog/v/{r['key']}"
-        await event.edit("Pasted to {} in {} seconds. Goto Original URL: {}".format(url, ms, nurl))
+        await event.edit("Dogged to {} in {} seconds. GoTo Original URL: {}".format(url, ms, nurl))
     else:
-        await event.edit("Pasted to {} in {} seconds".format(url, ms))
+        await event.edit("Dogged to {} in {} seconds".format(url, ms))

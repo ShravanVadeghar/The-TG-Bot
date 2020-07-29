@@ -1,12 +1,17 @@
-# For UniBorg
-# Syntax
-# .enableai [as a reply to user's message] // Turns AI on For that user.
-# .disableai [as a reply to user's message] // Turns AI off For that user.
-# .listai // Outputs List Of Currently added Users in AI Auto-Chat.
-# Credits:
-# @Hackintosh5 (for inspiring me to write this module)
-# @Zero_cool7870 (For Writing The Original Module)
-# Zi Xing (For CoffeeHouse API)
+"""Lydia AI plugin for @UniBorg
+
+.enableai <as a reply to user's message //Turns AI on For that user.
+.disableai <as a reply to user's message //Turns AI off For that user.
+.listai // Outputs List Of Currently added Users in AI Auto-Chat.
+
+Description: A module that Act as a chatbot and chat with a User/other Bot.
+This Module Needs CoffeeHouse API to work. so Join https://telegram.dog/IntellivoidDev and send #activateapi and follow instructions.
+This Module also Needs DB_URI For Storage of Some Data So make sure you have that too.
+
+Credits:
+@Hackintosh5 (for inspiring me to write this module)
+@Zero_cool7870 (For Writing The Original Module)
+Zi Xing (For CoffeeHouse API)"""
 
 
 import coffeehouse as cf
